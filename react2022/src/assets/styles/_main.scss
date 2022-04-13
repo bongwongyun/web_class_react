@@ -1,11 +1,11 @@
-#main {
+.main__Cont {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     background: #000;
 
-    .main__cont {
+    .main__inner {
         font-size: 10vw;
         line-height: 0.85;
         font-family: "Saol";

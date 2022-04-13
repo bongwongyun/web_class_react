@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route} from "react-router-dom";
 import Main from "./components/pages/Main";
 import About from "./components/pages/About";
 import Reference from "./components/pages/Reference";
-import Script from "./components/pages/script";
+import Script from "./components/pages/Script";
 import Youtube from "./components/pages/Youtube";
 import Contact from "./components/pages/Contact";
 import Portfolio from "./components/pages/Portfolio";

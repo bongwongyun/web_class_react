@@ -1,4 +1,15 @@
 @charset "UTF-8";
+
+//변수 설정
+:root {
+  --dark_bg: #000;
+  --dark_border: #222;
+  --dark: #000;
+  --light: #fff;
+  --light_bg: #f0eeeb;
+  --light_border: #dad8d1;
+}
+
 /* border-box 초기화 */
 *,
 *:before,
