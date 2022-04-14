@@ -11,7 +11,7 @@ function Portfolio() {
         <>
         <Header />
         <Contents>
-            <Contitle/>
+            <Contitle title={["Portfolio", "site"]}/>
             <Portcont/>
             <Contcontact/>
         </Contents>

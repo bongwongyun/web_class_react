@@ -7,8 +7,41 @@
     width: 98%;
     margin: 0 auto;
     h3 {
-        font-size: 4vw;
-        text-align: left;
+        font-size: 10vh;
+        text-transform: uppercase;
+        padding: 10vw;
+        font-family: var(--main_font);
+        line-height: 1;
+        margin-right: 20%;
+
+        em {
+            display: block;
+        }
     }
-    p {}
+}
+.about__01 {
+    
+}
+.about__02 {
+    p { 
+        font-size: 18px;
+        font-family: var(--sub_font);
+        padding: 10vh;
+        padding-top: 0;
+        width: 77%;
+    }
+    img {
+        padding: 10vh;
+    }
+}
+.about__03 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    img {
+        padding: 10vh;
+    }
+
 }
