@@ -1,0 +1,33 @@
+//port__cont
+.port__cont {
+    padding-bottom: 20vh;
+}
+.port__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.port__item {
+    flex: 1 1 30%;
+    margin: 1%;
+    .img {}
+    .text {
+        padding: 1.4rem;
+        background: var(--dark_border);
+       
+        h3 {
+            color: var(--light);
+            font-family: var(--main_font);
+            font-size: 2.6rem;
+            line-height: 1;
+            padding-top: 0.2em;
+            text-transform: uppercase;
+        }
+        p {
+            padding-top: 2em;
+            color: var(--light);
+            font-family: var(--sub_font);
+        }
+    }
+}

@@ -85,3 +85,17 @@
         }
     }
 }
+//midia quary
+@media(max-width:1000px) {
+    #footer {
+        div:nth-child(1) {
+            h4 {
+                display: none;
+            }
+        }
+        div:nth-child(2),
+        div:nth-child(3) {
+            display: none;
+        }
+    }
+}
