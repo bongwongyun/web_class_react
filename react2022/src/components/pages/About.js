@@ -1,13 +1,14 @@
 import React from 'react';
-import Header from "../includes/Header";
-import Contents from "../includes/Contents";
-import Footer from "../includes/Footer";
+import Header from "../layout/Header";
+import ConContacts from "../layout/ConContacts";
+import ConContact from '../layout/ConContact';
+import Footer from "../layout/Footer";
 
 function About() {
     return (
         <>
-        <Header />
-        <Contents>
+        <Header color="light"/>
+        <ConContacts>
             <section className="about__Cont">
                 <div className="about__inner">
                     <div className="container">
@@ -37,10 +38,21 @@ function About() {
                             </p>
                         </div>
                     </div>
+                    <div className="container">
+                        <div className="about__04">
+                            <p> 나에게 정직하다.<br /><br />
+                            정직은 다른 사람보다 나에게 큰 의미를 부여해야 한다. 
+                            자신이 정직하지 않으면 진정으로 원하는 일을 열정적으로 밀고 나갈 수 없다. 마음에서 우러나오는 일을 해야 정직해지며 삶을 더 즐길 줄 알게 된다. 
+                            다름 사람에게도 정직해야 하지만 그 무엇보다 나 자신한테 정직해야 한다.
+                            </p>
+                            <img src="/img/aboutImg03.jpg" alt="" />
+                        </div>
+                    </div>
                 </div>
             </section>
-        </Contents>
-        <Footer />
+            <ConContact/>
+        </ConContacts>
+        <Footer color="light"/>
     </>
     )
 }

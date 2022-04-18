@@ -1,0 +1,33 @@
+.Contact__cont {
+    background-color: var(--dark);
+    min-height: 100vh;
+}
+.Contact__inner {
+    padding: 10vh;
+    h2 {
+        color: var(--light);
+        font-family: var(--main_font);
+        font-size: 10vw;
+        margin-bottom: 4rem;
+        line-height: 1;
+        text-transform: uppercase;
+        text-align: left;
+        max-width: 1920px;
+
+        span {
+            display: block;
+            text-align: center;
+            em {
+                display: block;
+                text-align: right;
+            }
+        }
+    }
+    p {
+        color: var(--light);
+        text-align: left;
+        max-width: 40%;
+        margin: 0 auto;
+        margin-right: 0;
+    }
+}

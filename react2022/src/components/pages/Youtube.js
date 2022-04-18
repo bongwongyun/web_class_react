@@ -1,19 +1,21 @@
 import React from 'react';
-import Header from "../includes/Header";
-import Contents from "../includes/Contents";
-import Footer from "../includes/Footer";
+import Header from "../layout/Header";
+import ConContacts from "../layout/ConContacts";
+import ConContact from '../layout/ConContact';
+import Footer from "../layout/Footer";
 
 function Youtube() {
     return (
         <>
         <Header />
-        <Contents>
+        <ConContacts>
             <section className="Youtube__Cont">
                 <div className="Youtube__inner">
                     <div>Youtube</div>
                 </div>
             </section>
-        </Contents>
+            <ConContact/>
+        </ConContacts>
         <Footer />
     </>
     )

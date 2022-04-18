@@ -1,19 +1,18 @@
 import React from 'react';
-import Header from "../includes/Header";
-import Contents from "../includes/Contents";
-import Footer from "../includes/Footer";
+import Header from "../layout/Header";
+import ConContact from "../layout/ConContact";
+import ConContacts from '../layout/ConContacts';
+import Footer from "../layout/Footer";
+import ContactCont from "../includes/ContactCont";
 
 function Contact() {
     return (
         <>
         <Header />
-        <Contents>
-            <section className="Contact__Cont">
-                <div className="Contact__inner">
-                    <div>Contact</div>
-                </div>
-            </section>
-        </Contents>
+        <ConContacts>
+            <ContactCont />
+            <ConContact />
+        </ConContacts>
         <Footer />
     </>
     )

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Portcont() {
+function PortCont() {
     return (
         <section className='port__cont'>
             <div className="container">
@@ -34,7 +34,7 @@ function Portcont() {
                     </article>
                     <article className="port__item">
                         <figure className="img">
-                            <a href="/"><img src="/img/port03@2x.jpg" alt="" /></a>
+                            <a href="/"><img src="/img/port04@2x.jpg" alt="" /></a>
                         </figure>
                         <div className="text">
                             <h3>Portfolio title</h3>
@@ -43,7 +43,7 @@ function Portcont() {
                     </article>
                     <article className="port__item">
                         <figure className="img">
-                            <a href="/"><img src="/img/port03@2x.jpg" alt="" /></a>
+                            <a href="/"><img src="/img/port01@2x.jpg" alt="" /></a>
                         </figure>
                         <div className="text">
                             <h3>Portfolio title</h3>
@@ -52,7 +52,7 @@ function Portcont() {
                     </article>
                     <article className="port__item">
                         <figure className="img">
-                            <a href="/"><img src="/img/port03@2x.jpg" alt="" /></a>
+                            <a href="/"><img src="/img/port02@2x.jpg" alt="" /></a>
                         </figure>
                         <div className="text">
                             <h3>Portfolio title</h3>
@@ -65,4 +65,4 @@ function Portcont() {
     )
 }
 
-export default Portcont;
+export default PortCont;

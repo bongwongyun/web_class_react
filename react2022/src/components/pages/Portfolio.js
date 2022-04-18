@@ -1,20 +1,20 @@
 import React from 'react';
-import Header from "../includes/Header";
-import Contents from "../includes/Contents";
-import Footer from "../includes/Footer";
-import Portcont from "../includes/Portcont";
-import Contitle from '../includes/Conttitle';
-import Contcontact from '../includes/Contcontact';
+import Header from "../layout/Header";
+import ConContacts from "../layout/ConContacts";
+import ConContact from '../layout/ConContact';
+import Footer from "../layout/Footer";
+import PortCont from "../includes/PortCont";
+import Title from "../layout/Title";
 
 function Portfolio() {
     return (
         <>
         <Header />
-        <Contents>
-            <Contitle title={["Portfolio", "site"]}/>
-            <Portcont/>
-            <Contcontact/>
-        </Contents>
+        <ConContacts>
+            <Title title={["Portfolio", "site"]}/>
+            <PortCont/>
+            <ConContact/>
+        </ConContacts>
         <Footer />
     </>
     )

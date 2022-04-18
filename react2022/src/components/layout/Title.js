@@ -1,6 +1,6 @@
 import React from "react";
 
-function Contitle(props) {
+function Title(props) {
     return (
         <section className='cont__title'>
             <div className="container">
@@ -13,4 +13,4 @@ function Contitle(props) {
     )
 }
 
-export default Contitle;
+export default Title;

@@ -1,16 +1,18 @@
-import React from "react";
-import Header from "../includes/Header";
-import Contents from "../includes/Contents";
-import Footer from "../includes/Footer";
+import React from 'react';
+import Header from "../layout/Header";
+import ConContacts from "../layout/ConContacts";
+import ConContact from '../layout/ConContact';
+import Footer from "../layout/Footer";
 import MainContents from "../includes/MainContents";
 
 function Main() {
     return (
         <>
             <Header  />
-            <Contents>
+            <ConContacts>
                 <MainContents />
-            </Contents>
+                <ConContact/>
+            </ConContacts>
             <Footer />
         </>
     )
