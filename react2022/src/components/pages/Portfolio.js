@@ -68,7 +68,7 @@ class Portfolio extends React.Component {
     }
     getPorts = async () => {
         const {data:{data:{ports}}} = await axios.get("https://webstoryboy.github.io/dothome1/portfolio.json")
-        this.setState({data:ports})
+        this.setState({ports:ports})
         // console.log(ports)
         setTimeout(()=> {
             // console.log("두번쨰 시작")
@@ -95,7 +95,7 @@ class Portfolio extends React.Component {
                 <Header  />
                 <ConContacts>
                     <Title title={["Portfolio", "site"]}/>
-                    <PortCont/>
+                    <PortCont port={ports}/>
                     <ConContact/>
                 </ConContacts>
                 <Footer />
