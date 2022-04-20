@@ -5,7 +5,7 @@
 .container {
    
     h3 {
-        font-size: 10vh;
+        font-size: 5vh;
         text-transform: uppercase;
         padding: 10vw;
         padding-left: 0;
@@ -31,7 +31,6 @@
 .about__03 {
     display: flex;
     justify-content: space-between;
-
     P {
         font-size: 18px;
         font-family: var(--sub_font);
@@ -45,8 +44,12 @@
 .about__04 {
     display: flex;
     justify-content: space-between;
+    
     padding-top: 20%;
     padding-bottom: 20%;
+    img {
+        flex-wrap: wrap;
+    }
     P {
         font-size: 18px;
         font-family: var(--sub_font);

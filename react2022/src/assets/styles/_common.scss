@@ -81,4 +81,9 @@ background-color: var(--dark);
         transform: translateX(10px) translateY(10px);
     }
 }
+// 라이트 버전
+.light.cont__title {
+    background-color: #fff;
+    color: var(--dark);
+}
 //main Animation

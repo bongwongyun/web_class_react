@@ -1,6 +1,16 @@
 import React from "react";
 function Aboutinfo({title,desc,image}) {
-    return 
+    return (
+        <article className="about__item item1">
+            <figure className="img">
+                <a href="/"><img src={image} alt={title} /></a>
+            </figure>
+            <div className="text">
+                <h3>{title}</h3>
+                <p>{desc}</p>
+            </div>
+        </article>
+    )
 }
 const aboutText = [
    {
@@ -26,10 +36,10 @@ function AboutCont(props) {
                <div className="container">
                     {aboutText.map(txt=>(
                         <Aboutinfo 
-                            key={title.txt}
-                            title={title.txt}
-                            desc={desc.txt}
-                            image={image.txt}
+                            key={txt.title}
+                            title={txt.title}
+                            desc={txt.desc}
+                            image={txt.image}
                         />
                 ))}
                </div>

@@ -78,4 +78,11 @@ body {
         filter: blur(0px);
         animation: blur-text 1.5s $i * 0.2s infinite linear alternate;
     }
-  }
+}
+//라이트 모드 
+#loading.light {
+    background: #fff;
+    span {
+        color: #000;
+    }
+}
