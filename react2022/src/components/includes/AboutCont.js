@@ -1,15 +1,12 @@
 import React from "react";
 function Aboutinfo({title,desc,image}) {
     return (
-        <article className="about__item item1">
-            <figure className="img">
-                <a href="/"><img src={image} alt={title} /></a>
-            </figure>
-            <div className="text">
-                <h3>{title}</h3>
-                <p>{desc}</p>
-            </div>
-        </article>
+        <>
+        <div className="about__01">
+            <img src={image} />
+            <p>{title}<br /><br />{desc}</p>
+        </div>
+        </>
     )
 }
 const aboutText = [

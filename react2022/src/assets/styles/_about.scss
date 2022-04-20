@@ -3,9 +3,8 @@
     background: var(--light);
 }
 .container {
-   
     h3 {
-        font-size: 5vh;
+        font-size: 10vh;
         text-transform: uppercase;
         padding: 10vw;
         padding-left: 0;
@@ -18,8 +17,7 @@
         }
     }
 }
-.about__01 {}
-.about__02 {
+.about__01:nth-child(1) {
     p { 
         font-size: 18px;
         font-family: var(--sub_font);
@@ -28,33 +26,33 @@
         width: 77%;
     }
 }
-.about__03 {
+//about__02
+.about__01:nth-child(2) {
     display: flex;
     justify-content: space-between;
     P {
         font-size: 18px;
         font-family: var(--sub_font);
-        width: 30%;
-        padding: 10vh;
+        padding: 4vh;
         padding-right: 0;
         padding-top: 0;
     }
 
 }
-.about__04 {
+//about__03
+.about__01:nth-child(3) {
     display: flex;
     justify-content: space-between;
-    
+    flex-direction: row-reverse;
     padding-top: 20%;
     padding-bottom: 20%;
-    img {
-        flex-wrap: wrap;
-    }
+    // img {
+    //     flex-wrap: wrap;
+    // }
     P {
         font-size: 18px;
         font-family: var(--sub_font);
-        width: 40%;
-        padding: 10vh;
+        padding: 4vh;
         padding-left: 0;
         padding-top: 0;
     }

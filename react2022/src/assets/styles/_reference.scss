@@ -20,3 +20,26 @@
         }
     }
 }
+// 라이트 모드
+.light.refer__cont {
+    background-color: var(--light);
+    color: var(--dark);
+}
+.light.refer__inner {
+    h2 {
+        color: var(--dark);
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    table {
+        border-top: 1px solid var(--dark_border);
+        border-bottom: 2px solid var(--dark_border);
+        color: var(--dark);
+        td {
+            border-top: 1px solid var(--dark_border);
+            padding: 1.4rem 0;
+            font-family: var(--subKor_font);
+            font-weight: 300;
+        }
+    }
+}

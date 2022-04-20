@@ -1,1 +1,1 @@
-https://github.com/bongwongyun/web_class_react/react2022/src/assets/json/Refaerence.json
+https://raw.githubusercontent.com/bongwongyun/web_class_react/master/react2022/src/assets/json/Refaerence.json

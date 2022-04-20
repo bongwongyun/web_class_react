@@ -81,7 +81,7 @@ class About extends React.Component {
                     <AboutCont />
                     <ConContact/>
                 </ConContacts>
-                <Footer />
+                <Footer color="light"/>
                 </>
                 )}
             </>
@@ -96,11 +96,9 @@ class About extends React.Component {
 //             <section className="about__Cont">
 //                 <div className="about__inner">
 //                     <div className="container">
+//                         <h3>about 
+//                         <em>me</em></h3>
 //                         <div className="about__01">
-//                             <h3>about 
-//                             <em>me</em></h3>
-//                         </div>
-//                         <div className="about__02">
 //                             <img src="/img/aboutImg01.jpg" alt="" />
 //                             <p> 꿈을 설계하고 디자인 하다. <br /><br />
 //                                 나는 공간을 만드는 것을 좋아한다 어려을 때부터 나만의 공간을 만드는 것을 좋아했고 나만의 다락방을 좋아했다. 
@@ -109,7 +107,7 @@ class About extends React.Component {
 //                                 그 한구석에 나만의 꿈을 설계하고 디자인을 하며 앞으로도 살고 싶다.
 //                             </p>
 //                         </div>
-//                         <div className="about__03">
+//                         <div className="about__02">
 //                             <img src="/img/aboutImg02.jpg" alt="" />
 //                             <p> 열심히 할수록 기회는 따른다. <br /><br />
 //                                 운이 좋은 사람은 없다. 단지 운을 만들 뿐이다. 운을 만들기 위해서는 내가 좋아하는 일이나 내가 하고 싶은 일에 몰두하면 된다. 
@@ -117,7 +115,7 @@ class About extends React.Component {
 //                                 단지 행운만 좋았기 때문이다. 운을 만든 사람은 돈을 날려먹거나 헛되게 쓰지 않는다. 열심히 할수록 운은 나에게 온다.
 //                             </p>
 //                         </div>
-//                         <div className="about__04">
+//                         <div className="about__03">
 //                             <p> 나에게 정직하다.<br /><br />
 //                             정직은 다른 사람보다 나에게 큰 의미를 부여해야 한다. 
 //                             자신이 정직하지 않으면 진정으로 원하는 일을 열정적으로 밀고 나갈 수 없다. 마음에서 우러나오는 일을 해야 정직해지며 삶을 더 즐길 줄 알게 된다. 

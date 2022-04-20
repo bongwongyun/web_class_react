@@ -51,9 +51,7 @@
                 "<b> 태그는 <em>, <strong>, <mark>에 해당 되지 않고, 특별한 정보 전달의 의미가 없을 때 고려해서 사용합니다.",
                 "<b> 태그는 단순하게 글씨를 두껍게 하기 위함이라면 CSS 속성 font-weight의 bold를 권장합니다."
                 ],
-                "Accessibility": [ 
-               
-                ],
+                "Accessibility": [],
                 "mbn":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b",
                 "w3c":"https://html.spec.whatwg.org/multipage/sections.html#the-b-element"
             },
@@ -77,9 +75,7 @@
                 "<canvas> 태그의 크기는 CSS를 통해 설정할 수 있지만, 렌더링을 통해 이미지 크기가 변경되어 왜곡 될 수 있습니다.",
                 "<canvas> 태그의 최대 크기는 브라우저마다 다를 수 있습니다."
                 ],
-                "Accessibility": [ 
-               
-                ],
+                "Accessibility": [],
                 "mbn":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas",
                 "w3c":"https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element"
             },
@@ -99,9 +95,7 @@
                 "<data> 태그는 주어진 요소의 데이터 값을 설정합니다.",
                 "<data> 태그는 주어진 콘텐츠 값이 시간과 관련되어 있다면 <time>태그를 사용합니다."
                 ],
-                "Accessibility": [ 
-                    
-                ],
+                "Accessibility": [],
                 "mbn":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data",
                 "w3c":"https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-data-element"
             },
@@ -129,9 +123,7 @@
                 "글씨를 아래첨자로 표현하고 싶다면 <sub> 태그를 사용합니다.",
                 "글씨의 맞춤법이 틀린 단어를 표현하고 싶다면 <u> 태그를 사용합니다"
                 ],
-                "Accessibility": [ 
-                ""
-                ],
+                "Accessibility": [],
                 "mbn":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn",
                 "w3c":"https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element"
             }
