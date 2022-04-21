@@ -29,7 +29,7 @@
                 "링크를 통해 페이지 이동시 '페이지 이동' 및 '새로운 브라우저에서 열림' 등의 메시지를 명시하여야 합니다.",
                 "target='_blank' 속성을 사용할 경우 '새로운 브라우저에서 열림' 등의 메세지를 명시하여야 스크린리더기를 사용하는 사용자에게 도움을 줄 수 있습니다."
                 ],
-                "mbn":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a",
+                "mdn":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a",
                 "w3c":"https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element"
             },
             {
@@ -52,7 +52,7 @@
                 "<b> 태그는 단순하게 글씨를 두껍게 하기 위함이라면 CSS 속성 font-weight의 bold를 권장합니다."
                 ],
                 "Accessibility": [],
-                "mbn":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b",
+                "mdn":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b",
                 "w3c":"https://html.spec.whatwg.org/multipage/sections.html#the-b-element"
             },
             {
@@ -76,7 +76,7 @@
                 "<canvas> 태그의 최대 크기는 브라우저마다 다를 수 있습니다."
                 ],
                 "Accessibility": [],
-                "mbn":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas",
+                "mdn":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas",
                 "w3c":"https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element"
             },
             {
@@ -96,7 +96,7 @@
                 "<data> 태그는 주어진 콘텐츠 값이 시간과 관련되어 있다면 <time>태그를 사용합니다."
                 ],
                 "Accessibility": [],
-                "mbn":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data",
+                "mdn":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data",
                 "w3c":"https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-data-element"
             },
             {
@@ -124,7 +124,7 @@
                 "글씨의 맞춤법이 틀린 단어를 표현하고 싶다면 <u> 태그를 사용합니다"
                 ],
                 "Accessibility": [],
-                "mbn":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn",
+                "mdn":"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn",
                 "w3c":"https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element"
             }
         ]

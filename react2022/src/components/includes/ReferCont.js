@@ -1,47 +1,27 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import propTypes from 'prop-types'
 
-function ReferInfo({id, title, desc}){
-  return (
-        <tr>
-          <td>{id}</td>
-          <td>{title}</td>
-          <td>
-            <Link to={{
-              pathname: "/reference-detail",
-              state:{id,title,desc},
-            }}>{desc.slice(0,100)}</Link></td>
-        </tr>
-               
-  )
+function ReferCont({id,title,desc,use,desc2,element,tag,version,view,image,link,Definition,Accessibility,mdn,w3c}) {
+    return (
+      <li>
+        <Link to={{
+          pathname:"reference-detail",
+          state:{id,title,desc,use,desc2,element,tag,version,view,image,link,Definition,Accessibility,mdn,w3c}
+        }}>
+          <span className='num'>{id}</span>
+          <span className='title'>{title}</span>
+          <span className='desc'>{desc}</span>
+          <span className='use'>{use}</span>
+        </Link>
+      </li>
+    )
 }
-function ReferCont(props){
-  return(
-    <section className={`refer__cont ${props.color}`}>
-          <div className="container">
-            <div className={`refer__inner ${props.color}`}>
-              <h2>CSS</h2>
-              <table>
-                <colgroup>
-                  <col style={{width: "10%"}} />
-                  <col style={{width: "20%"}} />
-                  <col style={{width: "70%"}} />
-                </colgroup>
-                <tbody>
-                  {props.refer.map((refer) => (
-                    <ReferInfo
-                        key={refer.id}
-                        id={refer.id}
-                        title={refer.title}
-                        desc={refer.desc}
-                    />
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-  )
+ReferCont.prototype = {
+  id:propTypes.number.isRequired,
+  title:propTypes.string.isRequired,
+  desc:propTypes.string.isRequired,
+  use:propTypes.string.isRequired,
 }
 // function referCont() {
 //   return (

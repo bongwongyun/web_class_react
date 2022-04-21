@@ -1,6 +1,8 @@
 .about__Cont {}
 .about__inner {
     background: var(--light);
+    opacity: 0;
+    transform: translateX(10px) translateY(50px);
 }
 .container {
     h3 {

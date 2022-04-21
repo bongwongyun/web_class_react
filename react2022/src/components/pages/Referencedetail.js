@@ -5,10 +5,18 @@ import Footer from "../layout/Footer";
 import ReferCont from "../includes/ReferCont";
 import { gsap } from "gsap";
 
+// function Referencedetail(props) {
+//     console.log(props)
+//     return (
+//         <div>Referencedetail</div>
+//     )
+// }
 class Referencedetail extends React.Component {
-    componentDidMount() {
-
-        document.querySelector("body").style.background="#fff"
+    componentDidMount(){
+        const {location, tistory} = this.props
+        if (location.state === undefined) {
+            tistory.push("/reference")
+        }
         this.mainAnimation()
     }
     mainAnimation = () => {
@@ -33,22 +41,62 @@ class Referencedetail extends React.Component {
             })
         },10)
     }
+
     render(){
-        return (
-            <>
-            <Header color="light"/>
-            <ConContacts>
-            <section className={`refer__cont light`}>
-                <div className="container">
-                    <div className="refer__inner">
-                        <ReferCont />
-                    </div>
-                </div>
-            </section>
-            </ConContacts>
-            <Footer color="light"/>
-            </>
-        )
+        const {location} = this.props
+        console.log(location.state)
+        if (location.state === undefined) {
+            return <div>잘못된 페이지입니다!!</div>
+        } else {
+            return (
+                <>
+                    <Header color="light"/>
+                    <ConContacts>
+                    <section className="refer__cont">
+                            <div className="container">
+                                <div className="refer__inner">
+                                    <div className="refer__table">
+                                        <h3>{location.state.title}</h3>
+                                        <p>{location.state.desc}</p>
+                                            <table className='table'>
+                                                <thead>
+                                                    <tr>
+                                                        <th>특징</th>
+                                                        <th>설명</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>요소</th>
+                                                        <td>{location.state.element}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>닫는 태그</th>
+                                                        <td>{location.state.tag}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>버전</th>
+                                                        <td>{location.state.version}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>시각적 표현</th>
+                                                        <td>{location.state.view}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>사용성</th>
+                                                        <td>{location.state.use}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </ConContacts>
+                    <Footer color="light"/>
+                </>
+            )
+        }
     }
 }
 
