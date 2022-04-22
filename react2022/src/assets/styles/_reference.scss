@@ -23,6 +23,8 @@
 //     }
 // }
 .refer__inner {
+    opacity: 0;
+    transform: translateX(10px) translateY(50px);
     h2 {
         color: var(--light);
         font-size: 2rem;

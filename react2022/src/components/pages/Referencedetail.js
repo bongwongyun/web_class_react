@@ -17,6 +17,7 @@ class Referencedetail extends React.Component {
         if (location.state === undefined) {
             tistory.push("/reference")
         }
+        document.querySelector("body").style.background="#000";
         this.mainAnimation()
     }
     mainAnimation = () => {
@@ -50,13 +51,13 @@ class Referencedetail extends React.Component {
         } else {
             return (
                 <>
-                    <Header color="light"/>
+                    <Header />
                     <ConContacts>
                     <section className="refer__cont">
                             <div className="container">
                                 <div className="refer__inner">
                                     <div className="refer__table">
-                                        <h3>{location.state.title}</h3>
+                                        <h2>{location.state.title}</h2>
                                         <p>{location.state.desc}</p>
                                             <table className='table'>
                                                 <thead>
@@ -93,7 +94,7 @@ class Referencedetail extends React.Component {
                             </div>
                         </section>
                     </ConContacts>
-                    <Footer color="light"/>
+                    <Footer />
                 </>
             )
         }

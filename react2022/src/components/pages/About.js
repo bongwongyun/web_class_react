@@ -63,7 +63,7 @@ class About extends React.Component {
         setTimeout(() => {
             // console.log("첫번쨰 시작")
             document.getElementById("loading").classList.remove("loading__active")
-            document.querySelector("body").style.background="var(--light)";
+            document.querySelector("body").style.background="#fff";
             this.getPorts()
         }, 2000);
     }
@@ -78,7 +78,7 @@ class About extends React.Component {
                 <Header color="light"/>
                 <ConContacts>
                     <Title title={["About", "ME"]} color="light"/>
-                    <AboutCont />
+                    <AboutCont color="light"/>
                     <ConContact/>
                 </ConContacts>
                 <Footer color="light"/>

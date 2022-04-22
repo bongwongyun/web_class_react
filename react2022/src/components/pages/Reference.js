@@ -76,10 +76,10 @@ class Reference extends React.Component {
         return (
             <>
             {isLoading ? (
-                <Loading color="light"/>
+                <Loading />
                 ) : (
                 <>
-                <Header color="light"/>
+                <Header />
                 <ConContacts>
                     <Title title={["HTML", "REFERENCE"]}/>
                     <section className="refer__cont">
@@ -113,7 +113,7 @@ class Reference extends React.Component {
                     </section>
                     <ConContact/>
                 </ConContacts>
-                <Footer color="light"/>
+                <Footer />
                 </>
                 )}
             </>

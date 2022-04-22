@@ -3,31 +3,37 @@
     min-height: 100vh;
 }
 .Contact__inner {
-    padding: 10vh;
+   padding-top: 10vh;
     h2 {
         color: var(--light);
         font-family: var(--main_font);
-        font-size: 10vw;
+        font-size: 15vh;
         margin-bottom: 4rem;
         line-height: 1;
         text-transform: uppercase;
         text-align: left;
-        max-width: 1920px;
+        white-space: nowrap;
 
         span {
             display: block;
-            text-align: center;
+            text-align: left;
+            padding-left: 15%;
             em {
-                display: block;
-                text-align: right;
+              display: block;
+              text-align: right;
+              padding-left: 15%;
             }
         }
     }
     p {
         color: var(--light);
-        text-align: left;
-        max-width: 40%;
-        margin: 0 auto;
-        margin-right: 0;
+        margin-left: 70%;
+        min-height: 300px;
+    }
+}
+@media (max-width:600px) {
+    p {
+       text-align: center;
+       margin-left: 0; 
     }
 }
