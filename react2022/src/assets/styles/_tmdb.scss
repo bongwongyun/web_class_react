@@ -1,11 +1,11 @@
-.youtube__cont {
+.TMDB__cont {
     background: var(--light);
 }
-.youtube__inner {
+.TMDB__inner {
     opacity: 0;
     background: var(--light);
 }
-.youtube__list {
+.TMDB__list {
     background: var(--light);
     font-family: var(--main_font);
     font-size: 1.1rem;
@@ -25,7 +25,7 @@
         }
     }   
 }
-.youtube__list {
+.TMDB__list {
     opacity: 1;
     transform: translate(10px);
     background: var(--light);

@@ -1,4 +1,5 @@
 import React from "react";
+
 function Aboutinfo({title,desc,image}) {
     return (
         <>
@@ -9,6 +10,7 @@ function Aboutinfo({title,desc,image}) {
         </>
     )
 }
+
 const aboutText = [
    {
         title : "꿈을 설계하고 디자인 하다.",
@@ -26,6 +28,7 @@ const aboutText = [
         image : "img/aboutImg03.jpg"
     }
 ]
+
 function AboutCont(props) {
     return (
         <section className={`about__Cont ${props.color}`}>
