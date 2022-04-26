@@ -3,20 +3,17 @@ import Header from "../layout/Header";
 import ConContacts from "../layout/ConContacts";
 import ConContact from '../layout/ConContact';
 import Footer from "../layout/Footer";
-import TMDBCont from "../includes/TMDBCont";
 import Title from "../layout/Title";
-import axios from 'axios';
+import TMDBList from "../includes/TMDBList"
+import TMDBSearch from "../includes/TMDBSearch"
 import Loading from '../basics/Loading';
 import { gsap } from "gsap";
+import { useEffect, useState } from 'react';
 
-class TMDB extends React.Component {
-    state = {
-        isLoading:true,
-        lists: [],
-        searchs:[]
-    }
-    mainAnimation = () => {
+function TMDB() {
+    const mainAnimation = () => {
         setTimeout(()=> {
+            document.getElementById("loading").classList.remove("loading__active")
             gsap.to("#header", 
             {duration:0.8,
             top:0,
@@ -43,7 +40,7 @@ class TMDB extends React.Component {
             delay:0.8,
             ease: "back.out"
             })
-            gsap.to(".TMDB__inner", 
+            gsap.to(".youtube__inner", 
             {duration:0.8,
             x:0,
             y:0,
@@ -51,44 +48,73 @@ class TMDB extends React.Component {
             delay:1.6,
             ease: "back.out"
             })
-        },10)
+            gsap.to(".youtube__search", 
+            {duration:0.8,
+            x:0,
+            y:0,
+            opacity:1,
+            delay:1.6,
+            ease: "back.out"
+            })
+            gsap.to(".youtube__list", 
+            {duration:0.8,
+            x:0,
+            y:0,
+            opacity:1,
+            delay:1.6,
+            ease: "back.out"
+            })
+        }, 2000)
+    }
+    const [results, setVideos] = useState([]);
+    const scarch = (query) => {
+        var requestOptions = {
+            method: 'GET',
+            redirect: 'follow'
+          };
+          
+          fetch(`https://api.themoviedb.org/3/search/movie?api_key=7f7a4782c5ffbe46d1d497f11139cca9&query=${query}`, requestOptions)
+            .then(response => response.json())
+            .then(result => setVideos(result.results)
+            ,mainAnimation())
+            .catch(error => console.log('error', error));
     }
 
-    getTMDBs = async () => {
-        const lists = await axios.get("https://api.themoviedb.org/3/movie/550?api_key=7f7a4782c5ffbe46d1d497f11139cca9")
-        this.setState({lists,isLoading:false})
-        this.mainAnimation()
-        console.log(lists)
-    }
+    useEffect(()=> {
+      var requestOptions = {
+          method: 'GET',
+          redirect: 'follow'
+        };
+        fetch("https://api.themoviedb.org/3/search/movie?api_key=7f7a4782c5ffbe46d1d497f11139cca9&query=avatar", requestOptions)
+          .then(response => response.json())
+          .then(result => {
+            setVideos(result.results)
+            mainAnimation()
+            console.log(result)
+        })
+          .catch(error => console.log('error', error));
+         
+    }, []);
 
-    componentDidMount(){
-        setTimeout(() => {
-            document.getElementById("loading").classList.remove("loading__active")
-            document.querySelector("body").style.background="#fff";
-            this.getTMDBs()
-        }, 2000);
-    }
-
-    render(){
-        const {isLoading,lists} = this.state
-        return (
-            <>
-           {isLoading ? (
-                <Loading color="light"/>
-                ) : (
-                <>
-                <Header color="light"/>
-                <ConContacts>
-                    <Title title={["TMDB", "SITE"]} color="light"/>
-                    <TMDBCont lists={lists}/>
-                    <ConContact/>
-                </ConContacts>
-                <Footer color="light"/>
-                </>
-            )}
-            </>
-        )
-    }
-}
+    return (
+      <>
+      <Loading color="light"/>
+          <Header color="light" />
+          <ConContacts>
+              <Title title={["TMDB","site"]} color="light"/>
+               <section className='youtube__cont'>
+                   <div className="container">
+                       <div className="youtube__inner">
+                       <TMDBSearch onSearch={scarch} />
+                        <TMDBList results={results} />
+                       </div>
+                   </div>
+               </section>
+              <ConContact />
+          </ConContacts>
+          <Footer color="light" />
+      </>
+    )
+  }
 
 export default TMDB;

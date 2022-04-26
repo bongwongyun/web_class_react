@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 
-function YoutubeSearch({onSearch}) {
+function TMDBSearch({onSearch}) {
   
   const inputRef = useRef()
   
@@ -27,4 +27,4 @@ function YoutubeSearch({onSearch}) {
   )
 }
 
-export default YoutubeSearch
+export default TMDBSearch
