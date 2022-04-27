@@ -75,8 +75,10 @@ function TMDB() {
           
           fetch(`https://api.themoviedb.org/3/search/movie?api_key=7f7a4782c5ffbe46d1d497f11139cca9&query=${query}`, requestOptions)
             .then(response => response.json())
-            .then(result => setVideos(result.results)
-            ,mainAnimation())
+            .then(result => {
+              setVideos(result.results);
+              mainAnimation();
+          })
             .catch(error => console.log('error', error));
     }
 
@@ -88,9 +90,8 @@ function TMDB() {
         fetch("https://api.themoviedb.org/3/search/movie?api_key=7f7a4782c5ffbe46d1d497f11139cca9&query=avatar", requestOptions)
           .then(response => response.json())
           .then(result => {
-            setVideos(result.results)
-            mainAnimation()
-            console.log(result)
+            setVideos(result.results);
+            mainAnimation();
         })
           .catch(error => console.log('error', error));
          

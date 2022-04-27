@@ -76,8 +76,10 @@ function Youtube() {
           
           fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=t${query}&key=AIzaSyAfrK9u6-9jUwLoDj89yDJHqI3Ly7862o4&type=video`, requestOptions)
             .then(response => response.json())
-            .then(result => setVideos(result.items)
-            ,mainAnimation())
+            .then(result => {
+              setVideos(result.items);
+              mainAnimation();
+          })
             .catch(error => console.log('error', error));
     }
 
@@ -88,8 +90,10 @@ function Youtube() {
         };
         fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=theweekend&key=AIzaSyAfrK9u6-9jUwLoDj89yDJHqI3Ly7862o4&type=video", requestOptions)
           .then(response => response.json())
-          .then(result => setVideos(result.items),
-          mainAnimation())
+          .then(result => {
+            setVideos(result.items);
+            mainAnimation();
+        })
           .catch(error => console.log('error', error));
     }, []);
 
